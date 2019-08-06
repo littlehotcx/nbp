@@ -14,4 +14,4 @@
 # limitations under the License.
 cd ..
 cd app
-nohup java -jar ngcregister-1.0.0.jar >> RegisterRunning.log
+nohup java -jar NGC-Register-1.0.0.jar >> RegisterRunning.log

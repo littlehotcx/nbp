@@ -52,10 +52,10 @@ if (!com_soda_storage_devices) {
 
     //fix: IN IE 11 , getClientType has the emerge error "不能执行已释放 Script 的代码";
     try{
-        com_soda_storage_devices.webContextPath = WEB_PLATFORM.getRootPath() + "/esdk";
+        com_soda_storage_devices.webContextPath = WEB_PLATFORM.getRootPath() + "/opensds";
     }
     catch (err){
-        com_soda_storage_devices.webContextPath = "/vsphere-client/esdk";
+        com_soda_storage_devices.webContextPath = "/vsphere-client/opensds";
         console.log("getRootPath error: " + err);
     }
 

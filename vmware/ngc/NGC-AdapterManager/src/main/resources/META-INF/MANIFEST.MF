@@ -1,16 +1,16 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: OpenAPI
+Bundle-Name: NGC-AdapterManager
 Bundle-SymbolicName: org.opensds.vmware.common
 Bundle-Version: 1.0.0
-Bundle-Vendor: Huawei
+Bundle-Vendor: OpenSDS
 Bundle-ClassPath: .
 Tool: Bundlor 1.1.0.RELEASE
-Export-Package: org.opensds.vmware.common,
- org.opensds.vmware.common.exceptions,
- org.opensds.vmware.common.adapters.oceanstor,
- org.opensds.vmware.common.adapters.oceanstor,
- org.opensds.vmware.common.models
+Export-Package: org.opensds.vmware.ngc.common,
+ org.opensds.vmware.ngc.exceptions,
+ org.opensds.vmware.ngc.adapters.oceanstor,
+ org.opensds.vmware.ngc.adapters.opensds,
+ org.opensds.vmware.ngc.models
 Import-Package: javax.crypto,
  javax.crypto.spec,
  javax.naming,

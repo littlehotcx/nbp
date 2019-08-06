@@ -5,7 +5,7 @@ Bundle-SymbolicName: org.opensds.vmware.ngc.ui
 Bundle-Version: 1.5.50
 Bundle-Vendor: Soda
 Bundle-ClassPath: .
-Web-ContextPath: vsphere-client/esdk
+Web-ContextPath: vsphere-client/opensds
 Import-Package: org.opensds.vmware.ngc.controller,
  org.opensds.vmware.ngc.adapter,
  org.opensds.vmware.ngc.config,

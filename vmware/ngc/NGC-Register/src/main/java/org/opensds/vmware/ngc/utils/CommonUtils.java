@@ -35,7 +35,7 @@ public class CommonUtils {
 
     private static final String DIRECT_DOWNWLOAD_PATH = "download/";
 
-    private static final String PACKAGE_NAME = "esdk.zip";
+    private static final String PACKAGE_NAME = "opensds-ngc.zip";
 
     private static final String PORT = "8088" ;
 

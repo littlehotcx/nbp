@@ -40,7 +40,7 @@ public class DatastoreServiceImpl implements DatastoreService{
 
     private static final Log logger = LogFactory.getLog(DatastoreServiceImpl.class);
 
-    @Autowired
+    @Autowired(required=false)
     private DeviceRepository deviceRepository;
 
     private static final String ERROR = "error";

@@ -16,7 +16,7 @@
         </select>
     </div>
     <br/>
-    <form id="opensdsStorageForm" class="pure-form pure-form-aligned storage-form" action="/ui/esdk/rest/device">
+    <form id="opensdsStorageForm" class="pure-form pure-form-aligned storage-form" action="/ui/opensds/rest/device">
         <fieldset>
             <div class="pure-control-group">
                 <label for="ip" id="ip">IP Address</label>
@@ -395,7 +395,7 @@
         $(document).ready(function () {
             // Namespace shortcut
             var ns = com_soda_storage_devices;
-            var baseURL = ns.baseURL + "esdk/rest/device";
+            var baseURL = ns.baseURL + "opensds/rest/device";
             var result_ip = false;
             var result_port = false;
             var result_username = false;

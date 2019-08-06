@@ -235,7 +235,7 @@ function makeHelp()
 			}else if(url=="snapshot"){//备份还原
 				patt = "/web_help/en/en-us_bookmap_0041188707.htm#en-us_topic_0041188732.html";
 			}
-			window.open("/vsphere-client/esdk" + patt);
+			window.open("/vsphere-client/opensds" + patt);
 	});
 	}
 /**

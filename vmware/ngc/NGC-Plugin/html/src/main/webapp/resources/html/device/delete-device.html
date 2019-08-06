@@ -192,7 +192,7 @@
 			var targets = getParam("targets");
 			$(document).ready(function() {
 				$("#confirm").click(function(){
-					var destinationURL = com_soda_storage_devices.baseURL + "esdk/rest/device/delete"
+					var destinationURL = com_soda_storage_devices.baseURL + "opensds/rest/device/delete"
 											+ "?deviceID=" + targets;
 					var deviceReq = new req(destinationURL, null);
 					deviceReq.type = "DELETE";

@@ -22,7 +22,7 @@ $(document).ready(
         // Data url to get System Info
         //var dataUrl = ns.buildDataSystemUrl(deviceId);
         // dataUrl = dataUrl + "?t=" + new Date();
-        var dataUrl = ns.baseURL + "esdk/rest/device/get?deviceID=" + deviceId;
+        var dataUrl = ns.baseURL + "opensds/rest/device/get?deviceID=" + deviceId;
 
         // Do the actual call now and save as GlobalRefresh handler
         refreshData();

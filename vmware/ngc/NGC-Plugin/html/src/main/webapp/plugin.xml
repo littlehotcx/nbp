@@ -15,7 +15,7 @@
 
    <dependencies>
 	  <!-- Allow HTML Client to display plugin icons in menus, shortcuts, object lists -->
-	  <dependency type="css" uri="esdk/assets/css/plugin-icons.css" />
+	  <dependency type="css" uri="opensds/assets/css/plugin-icons.css" />
    </dependencies>
 
    <!-- Add a "Chassis App" node to the Virtual Infrastructure view of the LHS
@@ -75,7 +75,7 @@
          <componentClass className="com.vmware.vsphere.client.htmlbridge.HtmlView">
             <object>
                <root>
-                  <url>/vsphere-client/esdk/resources/html/device/device-summary.html</url>
+                  <url>/vsphere-client/opensds/resources/html/device/device-summary.html</url>
                </root>
             </object>
          </componentClass>
@@ -185,10 +185,10 @@
                   <className>com.vmware.vsphere.client.htmlbridge.HtmlActionDelegate</className>
                   <object><root>
                      <!-- actionUrl maps to ActionsControlleron the java side -->
-                     <actionUrl>/vsphere-client/esdk/resources/html/device/delete-device.html</actionUrl>
+                     <actionUrl>/vsphere-client/opensds/resources/html/device/delete-device.html</actionUrl>
                      <dialogTitle>#{chassis.deleteAction}</dialogTitle>
                      <dialogSize>450,210</dialogSize>
-                     <!--<actionUrl>/vsphere-client/esdk/rest/hwactions</actionUrl>-->
+                     <!--<actionUrl>/vsphere-client/opensds/rest/hwactions</actionUrl>-->
                   </root></object>
                </delegate>
             </com.vmware.actionsfw.ActionSpec>
@@ -217,7 +217,7 @@
                   <className>com.vmware.vsphere.client.htmlbridge.HtmlActionDelegate</className>
                   <object><root>
                      <!-- execute the action on client-side (html view in a modal dialog) -->
-                     <actionUrl>/vsphere-client/esdk/resources/html/device/add-device.html</actionUrl>
+                     <actionUrl>/vsphere-client/opensds/resources/html/device/add-device.html</actionUrl>
                      <dialogTitle>#{chassis.createAction}</dialogTitle>
                      <dialogSize>680,545</dialogSize>
                   </root></object>
@@ -244,10 +244,10 @@
                   <className>com.vmware.vsphere.client.htmlbridge.HtmlActionDelegate</className>
                   <object><root>
                      <!-- actionUrl maps to ActionsControlleron the java side -->
-                     <actionUrl>/vsphere-client/esdk/resources/html/device/modify-device.html</actionUrl>
+                     <actionUrl>/vsphere-client/opensds/resources/html/device/modify-device.html</actionUrl>
                      <dialogTitle>#{chassis.configAction}</dialogTitle>
                      <dialogSize>680,545</dialogSize>
-                     <!--<actionUrl>/vsphere-client/esdk/rest/hwactions</actionUrl>-->
+                     <!--<actionUrl>/vsphere-client/opensds/rest/hwactions</actionUrl>-->
                   </root></object>
                </delegate>
             </com.vmware.actionsfw.ActionSpec>
@@ -301,7 +301,7 @@
 
    <!--action in vsphere-->
    <!--esxi right click menus-->
-   <extension id="com.soda.esdk.ngc.solution.hostMenus">
+   <extension id="com.soda.opensds.ngc.solution.hostMenus">
       <extendedPoint>vsphere.core.menus.solutionMenus</extendedPoint>
       <object>
          <label>SODA Storage Plugin</label>
@@ -311,7 +311,7 @@
                <!--credatastoreInfotore in esxi host -->
                <com.vmware.actionsfw.ActionMenuItemSpec>
                   <type>action</type>
-                  <uid>com.soda.esdk.ngc.action.createDatastore</uid>
+                  <uid>com.soda.opensds.ngc.action.createDatastore</uid>
                   <label>Create Datastore/Volume</label>
                </com.vmware.actionsfw.ActionMenuItemSpec>
             </Array>
@@ -325,19 +325,19 @@
 
 
    <!--credatastoreInfotore in esxi host-->
-   <extension id="com.soda.esdk.ngc.action.createDatastore">
+   <extension id="com.soda.opensds.ngc.action.createDatastore">
       <extendedPoint>vise.actions.sets</extendedPoint>
       <object>
          <actions>
             <com.vmware.actionsfw.ActionSpec>
-               <uid>com.soda.esdk.ngc.action.createDatastore</uid>
+               <uid>com.soda.opensds.ngc.action.createDatastore</uid>
                <label>Create Datastore/Volume</label>
                <icon></icon>
                <delegate>
                   <className>com.vmware.vsphere.client.htmlbridge.HtmlActionDelegate</className>
                   <object><root>
                      <!-- execute the action on client-side (html view in a modal dialog) -->
-                     <actionUrl>/vsphere-client/esdk/resources/html/datastore/datastore-p0-forward.html?type=createDatastore</actionUrl>
+                     <actionUrl>/vsphere-client/opensds/resources/html/datastore/datastore-p0-forward.html?type=createDatastore</actionUrl>
                      <dialogTitle>Create Datastore/Volume</dialogTitle>
                      <dialogSize>900,460</dialogSize>
                   </root></object>

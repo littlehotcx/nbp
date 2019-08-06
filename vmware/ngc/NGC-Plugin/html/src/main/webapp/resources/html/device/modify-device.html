@@ -10,7 +10,7 @@
         <h4 style="left:0px;top:32px;">Edit the storage platform information</h4>
     </div>
 
-    <form id="deviceEditForm" class="pure-form pure-form-aligned storage-form" action="/ui/esdk/rest/device">
+    <form id="deviceEditForm" class="pure-form pure-form-aligned storage-form" action="/ui/opensds/rest/device">
         <fieldset>
             <div class="pure-control-group" >
                 <label for="deviceType" id="deviceType">Storage Platform Type</label>
@@ -408,7 +408,7 @@
             $("input[name='ip']").focus();
             bundleEvent();
 
-            var baseURL = ns.baseURL + "esdk/rest/device";
+            var baseURL = ns.baseURL + "opensds/rest/device";
 
 
             $("input[name ='ip']").css("background-color", "transparent");
